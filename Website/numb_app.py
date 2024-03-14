@@ -3,8 +3,9 @@ import json
 import pandas as pd
 from tensorflow import keras
 
-st.title("Machine Learning Algorithm Tester")
-st.write("Authored by Kgen, Shadip")
+st.title("Plagiarized Assignment Tester")
+
+st.write("Our AI model is currently trained on 16689 parameter so any size greater than that will be shrunk and smaller will be padded")
 
 model = keras.models.load_model("num_model.h5")
 
@@ -38,9 +39,11 @@ if uploaded_file is not None:
     original_length = len(data_set)
     desired_length = 16689
 
-    padding_length = desired_length - original_length
-
-    data_set += [0] * padding_length
+    if original_length < desired_length:
+        padding_length = desired_length - original_length
+        data_set += [0] * padding_length
+    else:
+        data_set = data_set[:desired_length]
 
     X = []
     X.append(data_set)
@@ -58,3 +61,5 @@ if uploaded_file is not None:
 
 else:
     st.write("Please upload a file.")
+
+st.write("Authored by Kgen, Shadip")
