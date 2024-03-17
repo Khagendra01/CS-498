@@ -1,3 +1,0 @@
-16689 = When panda df was created, we got a lot of nan values. Taking average of nan value counts from all the rows and subtracting it from the largest length of a single assignment.
-32 = Node per hidden layer is tested number of per node hidden in order to beat the single perceptron effectively
-6 = the tested number of hidden layer which out perform any before that. We can research more to get even bigger number than 6. But for time efficiency of ours we are not doing it for now.

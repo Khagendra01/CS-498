@@ -1,0 +1,21 @@
+1. { git fetch upstream }
+2. { git merge upstream/main }
+3. changes garne
+4. { git add . } 
+5. { git commit -m "reason to change" }
+6. { git push }
+7. github repo ma gayera pull request garne
+8. new pull request garne
+
+You need to extract zip file from BackUpZipDataSet inside DataSet in order to use the stream of the DataSet
+
+Symbols - Semantic for logs (json)
+t - timestamp in ms
+u - cell number
+v - new value
+^ - insert (this has 3 args: index where installation starts, number of characters to delete, string to insert)
+| - cursor position within cell
+_c - cursor position within file 
+_cs - total number of chars in file
+_l - current line number in file
+_ls - total number of lines in file

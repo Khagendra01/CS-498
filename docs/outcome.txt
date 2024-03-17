@@ -1,0 +1,18 @@
+{ if trained on data with smaller shape and pad with the last seen value on train
+to match the test shape
+the test accuracy is around 47-50 %
+
+if trained on data with larger shape and pad with the last seen on test
+to natch the train shape
+the test accuracy is around 87-90 % }
+
+===
+{
+if trained on data with smaller shape and pad with 0
+to match the test shape
+the test accuracy is around 47-50 %
+
+if trained on data with larger shape and pad with 0
+to natch the train shape
+the test accuracy is around 87-90 % }
+
