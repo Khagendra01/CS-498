@@ -5,7 +5,7 @@ from tensorflow import keras
 
 st.title("Plagiarized Assignment Tester")
 
-st.write("Our AI model is currently trained on 16689 parameter so any size greater than that will be shrunk and smaller will be padded")
+st.write("Our AI model is currently trained on 539393 parameter. Input value will scaled to our trained model shape (16893)")
 
 model = keras.models.load_model("num_model.h5")
 
