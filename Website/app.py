@@ -6,7 +6,8 @@ from sklearn.preprocessing import StandardScaler
 
 st.title("Plagiarized Assignment Tester")
 
-st.write("Our AI model is currently trained on 539393 parameter. Input value will scaled to our trained model shape (16893)")
+st.write("Our AI model is currently trained on 550k parameter. Input value will be scaled to our trained model shape (16893).")
+#Gpt 3 trained on 175 billion parameter, gpt 3 100 trillion parameter
 
 model = keras.models.load_model("full_regular_model.h5")
 
