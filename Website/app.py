@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from tensorflow import keras
 from sklearn.preprocessing import StandardScaler
+import time
 
 st.title("Plagiarized Assignment Tester")
 
@@ -14,7 +15,9 @@ model = keras.models.load_model("full_regular_model.h5")
 uploaded_file = st.file_uploader("Upload your assignment file", type=['submit'])
 
 if uploaded_file is not None:
-    st.write("File uploaded successfully!")
+    with st.spinner("Making prediction..."):
+        time.sleep(5)  # Sleep for 5 seconds to simulate loading
+        st.success("This assignment is likely to be a ")
 
     json_data = json.load(uploaded_file)
     log_field = json_data['submission']['logs'][0]['log']
