@@ -16,7 +16,7 @@ uploaded_file = st.file_uploader("Upload your assignment file", type=['submit'])
 
 if uploaded_file is not None:
     with st.spinner("Making prediction..."):
-        time.sleep(5)  # Sleep for 5 seconds to simulate loading
+        time.sleep(1)  # Sleep for 5 seconds to simulate loading
         st.success("This assignment is likely to be a ")
 
     json_data = json.load(uploaded_file)
