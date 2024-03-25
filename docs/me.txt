@@ -1,0 +1,7 @@
+########## Get Away, Dont read this #############
+########## This is only for KGen ################
+########## Why you still here? ###################
+
+for ($i=11; $i -le 100; $i++) {
+    Copy-Item "assignment_creator.assign" "assignment_creator_$i.assign"
+}
