@@ -1,5 +1,5 @@
-<h1> CS-498 Research Repository </h1>
-Welcome to the CS-498 research repository! This repository is dedicated to the research class of the computer science major core at Caldwell University. Our goal is to foster collaboration, exploration, and innovation in the field of computer science.
+<h1> CS-491 Research Repository </h1>
+Welcome to the CS-491 research repository! This repository is dedicated to the research class of the computer science major core at Caldwell University. Our goal is to foster collaboration, exploration, and innovation in the field of computer science.
 
 <h2> Project Overview </h2>
 <b>Guidance and Supervision: </b> The research project is expertly guided and supervised by <b>Professor Vlad Veksler.</b> His extensive experience and insights ensure that our work is rigorous and impactful. </br>
