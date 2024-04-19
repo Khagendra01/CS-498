@@ -10,7 +10,7 @@ st.title("Plagiarized Assignment Tester")
 st.write("Our AI model is currently trained on 550k parameter. Input value will be scaled to our trained model shape (16893).")
 #Gpt 3 trained on 175 billion parameter, gpt 3 100 trillion parameter
 
-model = keras.models.load_model("full_regular_model.h5")
+model = keras.models.load_model("good_model.h5")
 
 uploaded_file = st.file_uploader("Upload your assignment file", type=['submit'])
 
