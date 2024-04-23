@@ -67,4 +67,4 @@ if uploaded_file is not None:
 else:
     st.write("Please upload a file.")
 
-st.write("Authored by Kgen, Shadip")
+st.write("Authored by Khagendra (K-Gen)")
