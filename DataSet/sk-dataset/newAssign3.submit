@@ -1,0 +1,51 @@
+{
+  "course": {
+    "institution": "Caldwell University",
+    "name": "CS 196 - Computer Programming II",
+    "url": "https://caldwell.blackboard.com/",
+    "instructor": "Dr. V"
+  },
+  "name": "Assignment 1 - Classes and Objects",
+  "instructions": {
+    "start": "Assignment instructions will be available under README.md below *after* you initialized the assignment.",
+    "work": "<li>Click the README.md below for assignment instructions.</li><li>Click the assignment1.ipynb file to open and edit it.</li><li>Add your code to assignment1.ipynb, run all cells, and save before submitting your assignment.</li>",
+    "submit": "Upload the submission file on blackboard (the submission file will have the <b>.submit</b> extension)."
+  },
+  "due": "2024-02-05",
+  "mustBeNew": true,
+  "files": [
+    {
+      "name": "assignment1.ipynb",
+      "tracked": true,
+      "edited": "-"
+    },
+    {
+      "name": "README.md",
+      "content": "Click on the file assignment1.ipynb in this assignment.  \nThis is a jupyter notebook where you will add your code.\n\nDO NOT INCLUDE YOUR NAME/EMAIL ANYWHERE IN THIS FILE.\n\nIn this notebook you should add the following 6 cells with python code (plus additional markdown cells to document the assignment):\n\n  1. Create a class called Dog, such that any object of this class will have:\n    - attributes name, age, and breed\n    - methods talk, come, and sit\n    - when method talk is called, print `f\"{self.name} says woof\"`\n    - when method come is called, print `f\"{self.name} runs over\"`\n    - when method sit is called, print `f\"{self.name} sits\"`\n\n  2. Create a class called Cat, such that any object of this class will have\n    - attributes name, age, and breed\n    - methods talk, come, and sit\n    - when method talk is called, print `f\"{self.name} says meow\"`\n    - when method come is called, print `f\"{self.name} lazily meanders over\"`\n    - when method sit is called, print `f\"{self.name} gives you the a contemptuous look\"`\n\n  3. Create 2 different dogs (objects of class Dog) with different names, ages, and breeds; call the objects dog1 and dog2\n    - specify age in years, breed could be any dog breed (e.g., golden retriever, lab)\n\n  4. Create 2 different cats (objects of class Cat) with different names, ages, and breeds; call the objects cat1 and cat2\n    - specify age in years, breed could be any cat breed (e.g., briman, toyger)\n\n  5. Call the talk(), come(), and sit() methods for each of the 4 objects you created\n\n  6. Do the following 3 things:\n    - print the name, age, and breed for dog1 using the following code:\n      `print(f\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\")`\n    - add 1 to the age for dog1\n    - print the name, age, and breed for dog1 again, using the same code:\n      `print(f\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\")`\n\nAdd docstrings and comments (and/or markdown) where appropriate.\n\nCode will be evaluated for:\n- code is written and works as intended (e.g., correct calls, correct output, no errors)\n- clean/efficient code (e.g., no unnecessary code)\n- naming conventions (e.g., class names are UpperCamelCase)\n- readability (e.g., meaningful names, separation of code into separate cells)\n- documentation (e.g., docstrings, comments, argument type specification)\n- click \"View Rubric\" on blackboard under this assignment for more details\n\nExecute all cells in this notebook and save.\n\nSample output expected in this notebook:\n\n    Kobe says woof\n    Kobe runs over\n    Kobe sits\n    Spike says woof\n    Spike runs over\n    Spike sits\n    Jenna says meow\n    Jenna lazily meanders over\n    Jenna gives you the a contemptuous look\n    Sam says meow\n    Sam lazily meanders over\n    Sam gives you the a contemptuous look\n    The Labrador named Kobe is 5 years old now.\n    The Labrador named Kobe is 6 years old now.\n\n"
+    }
+  ],
+  "modified": "2024-06-27 16:23",
+  "currentlyOpen": true,
+  "folder": "/Users/shadipkhadka/Desktop/syntatic data/Assignment 1 - Classes and Objects",
+  "startDate": "2024-06-27 16:23",
+  "submission": {
+    "agent": {
+      "app": "vscode",
+      "extension": "LectureDot.lecture-assign",
+      "version": "0.0.15"
+    },
+    "date": "2024-06-27 16:24",
+    "files": [
+      {
+        "name": "assignment1.ipynb",
+        "content": "{\n \"cells\": [\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": 1,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": [\n    \"class dog: \\n\",\n    \"    def __init__(self, name: str, age: int, bread: str):\\n\",\n    \"     self.name = name\\n\",\n    \"     self.age = age\\n\",\n    \"     self.bread = bread\"\n   ]\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": 2,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": [\n    \"def talk(self):\\n\",\n    \"        print(f\\\"{self.name} says woof\\\")\\n\",\n    \"\\n\",\n    \"def come(self):\\n\",\n    \"        print(f\\\"{self.name} runs over\\\")\\n\",\n    \"    \\n\",\n    \"def sit(self):\\n\",\n    \"        print(f\\\"{self.name} sits\\\")\"\n   ]\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": 3,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": [\n    \"class cat:\\n\",\n    \"     def __init__(self, name: str, age: int, bread: str):\\n\",\n    \"      self.name = name\\n\",\n    \"      self.age = age\\n\",\n    \"      self.bread = bread\\n\",\n    \"      \\n\",\n    \"      def talk(self):\\n\",\n    \"        print(f\\\"{self.name} says meow\\\")\\n\",\n    \"    \\n\",\n    \"      def come(self):\\n\",\n    \"        print(f\\\"{self.name} lazily meanders over\\\")\\n\",\n    \"    \\n\",\n    \"      def sit(self):\\n\",\n    \"        print(f\\\"{self.name} gives you a contemptuous look\\\")\"\n   ]\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": null,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": []\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": null,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": []\n  }\n ],\n \"metadata\": {\n  \"kernelspec\": {\n   \"display_name\": \"Python 3\",\n   \"language\": \"python\",\n   \"name\": \"python3\"\n  },\n  \"language_info\": {\n   \"codemirror_mode\": {\n    \"name\": \"ipython\",\n    \"version\": 3\n   },\n   \"file_extension\": \".py\",\n   \"mimetype\": \"text/x-python\",\n   \"name\": \"python\",\n   \"nbconvert_exporter\": \"python\",\n   \"pygments_lexer\": \"ipython3\",\n   \"version\": \"3.11.2\"\n  }\n },\n \"nbformat\": 4,\n \"nbformat_minor\": 2\n}\n"
+      }
+    ],
+    "logs": [
+      {
+        "name": "assignment1.ipynb",
+        "log": "{\"t\":1719519818452,\"u\":0,\"v\":\"\",\"_courseId\":\"CS 196 - Computer Programming II\",\"_assignmentId\":\"Assignment 1 - Classes and Objects\"}\n{\"u\":0,\"^\":[0,0,\"class dog: \\n    def __init__(self, name: str, age: int, bread: str):\\n     self.name = name\\n     self.age = age\\n     self.bread = bread\"],\"t\":1719519833407}\n{\"u\":1,\"v\":\"\",\"t\":1719519840539}\n{\"u\":2,\"v\":\"\",\"t\":1719519840713}\n{\"u\":3,\"v\":\"\",\"t\":1719519840864}\n{\"u\":4,\"v\":\"\",\"t\":1719519841046}\n{\"u\":3,\"^\":[0,0,\"def talk(self):\\n        print(f\\\"{self.name} says woof\\\")\\n\\ndef come(self):\\n        print(f\\\"{self.name} runs over\\\")\\n    \\ndef sit(self):\\n        print(f\\\"{self.name} sits\\\")\"],\"t\":1719519842262}\n{\"u\":3,\"v\":\"class cat:\\n     def __init__(self, name: str, age: int, bread: str):\\n      self.name = name\\n      self.age = age\\n      self.bread = bread\\n      \\n      def talk(self):\\n        print(f\\\"{self.name} says meow\\\")\\n    \\n      def come(self):\\n        print(f\\\"{self.name} lazily meanders over\\\")\\n    \\n      def sit(self):\\n        print(f\\\"{self.name} gives you a contemptuous look\\\")\",\"t\":1719519847835}\n{\"u\":1,\"v\":\"def talk(self):\\n        print(f\\\"{self.name} says woof\\\")\\n\\ndef come(self):\\n        print(f\\\"{self.name} runs over\\\")\\n    \\ndef sit(self):\\n        print(f\\\"{self.name} sits\\\")\",\"t\":1719519847841}\n{\"u\":2,\"v\":\"class cat:\\n     def __init__(self, name: str, age: int, bread: str):\\n      self.name = name\\n      self.age = age\\n      self.bread = bread\\n      \\n      def talk(self):\\n        print(f\\\"{self.name} says meow\\\")\\n    \\n      def come(self):\\n        print(f\\\"{self.name} lazily meanders over\\\")\\n    \\n      def sit(self):\\n        print(f\\\"{self.name} gives you a contemptuous look\\\")\",\"t\":1719519847841}\n{\"u\":3,\"v\":\"\",\"t\":1719519847841}\n{\"t\":1719519857847,\"_#\":\"zt3XGcntyAJnUG0w5SKwuPqMF7I=\"}\n"
+      }
+    ]
+  }
+}
