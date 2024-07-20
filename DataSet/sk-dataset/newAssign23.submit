@@ -16,11 +16,36 @@
   "files": [
     {
       "name": "assignment1.ipynb",
-      "tracked": true
+      "tracked": true,
+      "edited": "-"
     },
     {
       "name": "README.md",
       "content": "Click on the file assignment1.ipynb in this assignment.  \nThis is a jupyter notebook where you will add your code.\n\nDO NOT INCLUDE YOUR NAME/EMAIL ANYWHERE IN THIS FILE.\n\nIn this notebook you should add the following 6 cells with python code (plus additional markdown cells to document the assignment):\n\n  1. Create a class called Dog, such that any object of this class will have:\n    - attributes name, age, and breed\n    - methods talk, come, and sit\n    - when method talk is called, print `f\"{self.name} says woof\"`\n    - when method come is called, print `f\"{self.name} runs over\"`\n    - when method sit is called, print `f\"{self.name} sits\"`\n\n  2. Create a class called Cat, such that any object of this class will have\n    - attributes name, age, and breed\n    - methods talk, come, and sit\n    - when method talk is called, print `f\"{self.name} says meow\"`\n    - when method come is called, print `f\"{self.name} lazily meanders over\"`\n    - when method sit is called, print `f\"{self.name} gives you the a contemptuous look\"`\n\n  3. Create 2 different dogs (objects of class Dog) with different names, ages, and breeds; call the objects dog1 and dog2\n    - specify age in years, breed could be any dog breed (e.g., golden retriever, lab)\n\n  4. Create 2 different cats (objects of class Cat) with different names, ages, and breeds; call the objects cat1 and cat2\n    - specify age in years, breed could be any cat breed (e.g., briman, toyger)\n\n  5. Call the talk(), come(), and sit() methods for each of the 4 objects you created\n\n  6. Do the following 3 things:\n    - print the name, age, and breed for dog1 using the following code:\n      `print(f\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\")`\n    - add 1 to the age for dog1\n    - print the name, age, and breed for dog1 again, using the same code:\n      `print(f\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\")`\n\nAdd docstrings and comments (and/or markdown) where appropriate.\n\nCode will be evaluated for:\n- code is written and works as intended (e.g., correct calls, correct output, no errors)\n- clean/efficient code (e.g., no unnecessary code)\n- naming conventions (e.g., class names are UpperCamelCase)\n- readability (e.g., meaningful names, separation of code into separate cells)\n- documentation (e.g., docstrings, comments, argument type specification)\n- click \"View Rubric\" on blackboard under this assignment for more details\n\nExecute all cells in this notebook and save.\n\nSample output expected in this notebook:\n\n    Kobe says woof\n    Kobe runs over\n    Kobe sits\n    Spike says woof\n    Spike runs over\n    Spike sits\n    Jenna says meow\n    Jenna lazily meanders over\n    Jenna gives you the a contemptuous look\n    Sam says meow\n    Sam lazily meanders over\n    Sam gives you the a contemptuous look\n    The Labrador named Kobe is 5 years old now.\n    The Labrador named Kobe is 6 years old now.\n\n"
     }
-  ]
+  ],
+  "modified": "2024-07-15 16:47",
+  "currentlyOpen": true,
+  "folder": "/Users/shadipkhadka/Documents/testing file/CS 196 - Computer Programming II/Assignment 1 - Classes and Objects-20240715-1",
+  "startDate": "2024-07-15 16:47",
+  "submission": {
+    "agent": {
+      "app": "vscode",
+      "extension": "LectureDot.lecture-assign",
+      "version": "0.0.15"
+    },
+    "date": "2024-07-15 16:47",
+    "files": [
+      {
+        "name": "assignment1.ipynb",
+        "content": ""
+      }
+    ],
+    "logs": [
+      {
+        "name": "assignment1.ipynb",
+        "log": "{\"t\":1721076425250,\"u\":0,\"v\":\"\",\"_courseId\":\"CS 196 - Computer Programming II\",\"_assignmentId\":\"Assignment 1 - Classes and Objects\"}\n{\"|\":0,\"_ls\":1,\"_cs\":0,\"_l\":0,\"_c\":0,\"u\":0,\"t\":1721076428962}\n{\"|\":0,\"_ls\":1,\"_cs\":0,\"_l\":0,\"_c\":0,\"u\":0,\"t\":1721076428991}\n{\"u\":0,\"^\":[0,0,\"# Define the Dog class\\nclass Dog:\\n    def __init__(self, name, age, breed):\\n        self.name = name\\n        self.age = age\\n        self.breed = breed\\n\\n    def talk(self):\\n        print(f\\\"{self.name} says woof\\\")\\n\\n    def come(self):\\n        print(f\\\"{self.name} runs over\\\")\\n\\n    def sit(self):\\n        print(f\\\"{self.name} sits\\\")\\n\\n# Define the Cat class\\nclass Cat:\\n    def __init__(self, name, age, breed):\\n        self.name = name\\n        self.age = age\\n        self.breed = breed\\n\\n    def talk(self):\\n        print(f\\\"{self.name} says meow\\\")\\n\\n    def come(self):\\n        print(f\\\"{self.name} lazily meanders over\\\")\\n\\n    def sit(self):\\n        print(f\\\"{self.name} gives you the a contemptuous look\\\")\\n\\n# Create dog objects\\ndog1 = Dog(\\\"Buddy\\\", 3, \\\"Golden Retriever\\\")\\ndog2 = Dog(\\\"Rocky\\\", 5, \\\"Labrador Retriever\\\")\\n\\n# Create cat objects\\ncat1 = Cat(\\\"Whiskers\\\", 2, \\\"Briman\\\")\\ncat2 = Cat(\\\"Mittens\\\", 1, \\\"Toyger\\\")\\n\\n# Call methods for each object\\ndog1.talk()\\ndog1.come()\\ndog1.sit()\\n\\ndog2.talk()\\ndog2.come()\\ndog2.sit()\\n\\ncat1.talk()\\ncat1.come()\\ncat1.sit()\\n\\ncat2.talk()\\ncat2.come()\\ncat2.sit()\\n\\n# Print dog1's info, increment age, and print again\\nprint(f\\\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\\\")\\ndog1.age += 1\\nprint(f\\\"The {dog1.breed} named {dog1.name} is {dog1.age} years old now.\\\")\"],\"t\":1721076430248}\n{\"|\":1289,\"_ls\":61,\"_cs\":1289,\"_l\":60,\"_c\":1289,\"u\":0,\"t\":1721076430259}\n{\"t\":1721076440264,\"_#\":\"IVn2XauMbo4YL8hxMJCmzBYXh0U=\"}\n"
+      }
+    ]
+  }
 }
